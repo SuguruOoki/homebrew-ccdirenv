@@ -1,25 +1,25 @@
 class Ccdirenv < Formula
   desc "direnv-style automatic Claude Code account switching"
   homepage "https://github.com/SuguruOoki/ccdirenv"
-  version "0.3.1"
+  version "0.3.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/SuguruOoki/ccdirenv/releases/download/v0.3.1/ccdirenv-aarch64-apple-darwin.tar.xz"
-      sha256 "7afdba05ce7269f4d7faa70cb9b65174ddebf029488a904c0645ded40a45c0f7"
+      url "https://github.com/SuguruOoki/ccdirenv/releases/download/v0.3.2/ccdirenv-aarch64-apple-darwin.tar.xz"
+      sha256 "6b99c19cab74c95b76c18996d1d9d0c9651fc565fbce4d029e4765a1ef04b7ab"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/SuguruOoki/ccdirenv/releases/download/v0.3.1/ccdirenv-x86_64-apple-darwin.tar.xz"
-      sha256 "b4e11a3c78b23caef14a51f9e224f382d59cddf2a0f2825615564ad0badfc439"
+      url "https://github.com/SuguruOoki/ccdirenv/releases/download/v0.3.2/ccdirenv-x86_64-apple-darwin.tar.xz"
+      sha256 "f25d5bccd5b1decac453cca6eae3bee0e3a2ce8a8763f67b1000593c6b808e10"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/SuguruOoki/ccdirenv/releases/download/v0.3.1/ccdirenv-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "bb09eb3ff11ba3db3a419134d24f44ff743ebe4b12e8ae084e9d39e35d0673d9"
+      url "https://github.com/SuguruOoki/ccdirenv/releases/download/v0.3.2/ccdirenv-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "9ca0c3ecf8908bdfddf825d6d90469a43ba5db8306d27f4182f97fb325986821"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/SuguruOoki/ccdirenv/releases/download/v0.3.1/ccdirenv-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "5defcc945280548324eccd75a9b31d9063d85304c045e8ae62e8a591f6de3543"
+      url "https://github.com/SuguruOoki/ccdirenv/releases/download/v0.3.2/ccdirenv-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "441495e5c9e7d835755e75a2d0675d8e0e381bf19c6bae62ed4924bee037842e"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
