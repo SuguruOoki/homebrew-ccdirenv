@@ -1,25 +1,25 @@
 class Ccdirenv < Formula
-  desc "direnv-style automatic Claude Code account switching"
+  desc "direnv-style automatic Claude Code and Codex CLI account switching"
   homepage "https://github.com/SuguruOoki/ccdirenv"
-  version "0.3.2"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/SuguruOoki/ccdirenv/releases/download/v0.3.2/ccdirenv-aarch64-apple-darwin.tar.xz"
-      sha256 "6b99c19cab74c95b76c18996d1d9d0c9651fc565fbce4d029e4765a1ef04b7ab"
+      url "https://github.com/SuguruOoki/ccdirenv/releases/download/v0.4.0/ccdirenv-aarch64-apple-darwin.tar.xz"
+      sha256 "215104adc6636ab2b77cd0c886be6c089844d2709140c4c6fa93110ae3e17689"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/SuguruOoki/ccdirenv/releases/download/v0.3.2/ccdirenv-x86_64-apple-darwin.tar.xz"
-      sha256 "f25d5bccd5b1decac453cca6eae3bee0e3a2ce8a8763f67b1000593c6b808e10"
+      url "https://github.com/SuguruOoki/ccdirenv/releases/download/v0.4.0/ccdirenv-x86_64-apple-darwin.tar.xz"
+      sha256 "d000c0d82220460d97336b49c380eb72bda6f3ad1be536e55d4f9207db3719c9"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/SuguruOoki/ccdirenv/releases/download/v0.3.2/ccdirenv-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "9ca0c3ecf8908bdfddf825d6d90469a43ba5db8306d27f4182f97fb325986821"
+      url "https://github.com/SuguruOoki/ccdirenv/releases/download/v0.4.0/ccdirenv-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "47f58e8d10f7c507e7cb88714867c6e5fb4a696c2eeb92b186fb5dc9d3d1c8dd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/SuguruOoki/ccdirenv/releases/download/v0.3.2/ccdirenv-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "441495e5c9e7d835755e75a2d0675d8e0e381bf19c6bae62ed4924bee037842e"
+      url "https://github.com/SuguruOoki/ccdirenv/releases/download/v0.4.0/ccdirenv-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "923176f0b4e384ca2cc03397e91b582bcc84af71126ad799480034afe6ccc40e"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
